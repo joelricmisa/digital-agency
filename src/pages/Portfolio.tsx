@@ -1,9 +1,39 @@
-import React from "react";
+import { projectsData } from "../lib/constants";
 
-type Props = {};
+const Portfolio = () => {
+  return (
+    <section>
+      <div className="mx-auto flex flex-col items-center justify-center gap-10 px-10 py-24  xl:w-11/12">
+        <p className="text-darkerNeutral before:bg-darkerNeutral/30 after:bg-darkerNeutral/30 relative before:mb-1 before:mr-4 before:inline-block before:h-[2px] after:mb-1 after:ml-4 after:inline-block after:h-[2px] xs:before:w-[80px] xs:after:w-[80px]   sm:before:w-[160px] sm:after:w-[160px]">
+          Our Portfolio
+        </p>
 
-const Portfolio = (props: Props) => {
-	return <div>Portfolio</div>;
+        <h1 className="text-center text-5xl font-bold leading-snug">
+          <span className="text-primary">Projects</span> We Have <br />{" "}
+          Completed
+        </h1>
+        <ul className="mt-10 flex flex-wrap items-center justify-center gap-5">
+          {projectsData.categories.map((item, index) => (
+            <li key={index}>
+              <a
+                href="#	"
+                className={`${
+                  index === 0 ? "bg-primary font-bold text-light" : "bg-neutral"
+                } block rounded-md border border-black/10  px-4  py-2 shadow-sm shadow-black/10`}
+              >
+                {item}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div className="mt-10 flex flex-wrap items-start justify-center gap-10">
+          {projectsData.images.map((imgSrc) => (
+            <img src={imgSrc} alt="project image" />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Portfolio;

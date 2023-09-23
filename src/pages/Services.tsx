@@ -6,7 +6,7 @@ import ServiceCard from "../components/ServiceCard";
 const Services = () => {
   return (
     <section className="bg-secondary">
-      <div className="mx-auto flex w-11/12 flex-col items-center justify-evenly gap-20 py-24  text-light lg:gap-10 lg:py-32 xl:flex-row">
+      <div className="mx-auto flex flex-col items-center justify-evenly gap-20 px-10 py-24 text-light  lg:gap-10 lg:py-32 xl:w-11/12 xl:flex-row">
         <div className="flex flex-col justify-center gap-8 lg:basis-4/12">
           <p className="before:mb-1 before:mr-3 before:inline-block before:h-[2px] before:w-1/4 before:bg-[#D8D8D8]">
             <span>What We Are</span>

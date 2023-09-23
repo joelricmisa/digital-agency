@@ -1,4 +1,12 @@
-import { development, mobileDev, seo, wireframe } from "../assets/images";
+import {
+  development,
+  mobileDev,
+  project1,
+  project2,
+  project3,
+  seo,
+  wireframe,
+} from "../assets/images";
 
 export const navLinks = [
   {
@@ -57,3 +65,8 @@ export const serivcesData = [
     altName: "SEO Image",
   },
 ] as const;
+
+export const projectsData = {
+  categories: ["All", "UI/UX", "Development", "Mobile Development", "SEO"],
+  images: [project1, project2, project3],
+} as const;
