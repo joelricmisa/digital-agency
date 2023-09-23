@@ -5,7 +5,7 @@ import { aboutImg2 } from "../assets/images";
 const About = () => {
   return (
     <section>
-      <div className="mx-auto my-20 flex flex-col items-center justify-between gap-20 px-10 lg:my-32 lg:flex-row lg:gap-0 xl:w-11/12">
+      <div className="mx-auto my-24 flex flex-col items-center justify-between gap-20 px-10 lg:my-32 lg:flex-row lg:gap-0 xl:w-11/12">
         <div className="relative flex  lg:basis-4/12">
           <img
             src={aboutImg1}
