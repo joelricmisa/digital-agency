@@ -1,9 +1,42 @@
-import React from "react";
+import TestimonialCard from "../components/TestimonialCard";
+import { testimonialsData } from "../lib/constants";
 
-type Props = {};
-
-const Testimonials = (props: Props) => {
-	return <div>Testimonials</div>;
+const Testimonials = () => {
+  const dummyArr = [1, 2, 3, 4, 5];
+  return (
+    <section className="bg-secondary">
+      <div className="mx-auto flex flex-col gap-10  px-10 py-24 text-light xl:w-11/12">
+        <div className="flex flex-wrap justify-between px-5">
+          <p className="relative before:mb-1 before:mr-2 before:inline-block before:h-[2px] before:w-[80px] before:bg-darkerNeutral sm:before:w-[250px]">
+            Customer Feedback
+          </p>
+          <ul className="relative hidden  items-center justify-center gap-2 before:mr-1 before:mt-1 before:inline-block before:h-[2px] before:w-[250px] before:bg-darkerNeutral lg:flex">
+            {dummyArr.map((bullet, index) => (
+              <li
+                className={`${
+                  index === 1
+                    ? "border-2 border-primary bg-secondary"
+                    : "bg-light"
+                } block h-4 w-4 rounded-full `}
+              ></li>
+            ))}
+          </ul>
+        </div>
+        <h1 className="px-5 text-3xl font-bold leading-normal sm:text-5xl sm:leading-snug">
+          What Our{" "}
+          <span className="text-primary">
+            Customer <br />
+          </span>{" "}
+          Say About Us
+        </h1>
+        <div className="mx-auto mt-10 flex flex-wrap justify-center gap-10">
+          {testimonialsData.map((client, index) => (
+            <TestimonialCard key={index} {...client} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Testimonials;

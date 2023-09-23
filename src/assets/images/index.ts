@@ -8,6 +8,10 @@ import wireframe from "./wireframe.png";
 import project1 from "./project1.png";
 import project2 from "./project2.png";
 import project3 from "./project3.png";
+import fiveStar from "./fiveStar.png";
+import user1 from "./user1.jpg";
+import user2 from "./user2.jpg";
+import user3 from "./user3.jpg";
 
 export {
   heroImg,
@@ -20,4 +24,8 @@ export {
   project1,
   project2,
   project3,
+  fiveStar,
+  user1,
+  user2,
+  user3,
 };
