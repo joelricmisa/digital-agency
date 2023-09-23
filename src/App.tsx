@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import About from "./pages/About";
 import Intro from "./pages/Intro";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <Header />
       <main>
         <Intro />
+        <About />
       </main>
     </>
   );

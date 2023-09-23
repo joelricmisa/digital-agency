@@ -9,19 +9,24 @@ const Intro = () => {
             <p>
               Welcome To <span className="text-primary">Canvas Lancer</span>
             </p>
-            <h1 className="text-2xl font-bold leading-normal xs:text-4xl sm:text-6xl md:text-[70px]">
-              Designing the Future <br /> with Canvas Lancer
+            <h1 className=" text-2xl font-bold  xs:text-4xl sm:text-6xl md:text-[70px] md:leading-snug">
+              Designing the Future <br />
+              with
+              <span className="relative ml-4 after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-full after:bg-primary">
+                Canvas Lancer
+              </span>
             </h1>
             <p className="text-base leading-relaxed">
               Lorem ipsum dolor sit amet consectetur. Aliquam quisque cursus
               proin adipiscing quis diam. Eu fringilla elit commodo nec aliquet.
               Augue pharetra nibh co
             </p>
-            <div className="mt-5 flex gap-5">
+            <div className="mt-5 flex w-1/2 justify-center gap-5 ">
               <ActionButton
                 bgColor="bg-primary"
                 txtColor="text-light"
                 linkId="#contact"
+                width="w-[150px]"
               >
                 Hire Us
               </ActionButton>

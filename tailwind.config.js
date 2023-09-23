@@ -7,14 +7,15 @@ export default {
         primary: "#FF3839",
         secondary: "#202020",
         neutral: "#F1F1F1",
+        darkerNeutral: "#696969",
         light: "#FFF",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
-      backgroundImage:{
-        hero:'url("/src/assets/images/bgHead.png")'
+      backgroundImage: {
+        hero: 'url("/src/assets/images/bgHead.png")',
       },
       width: {},
       screens: {
