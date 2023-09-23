@@ -94,3 +94,31 @@ export const testimonialsData = [
     customerPic: user3,
   },
 ];
+
+export const faqsData = [
+  {
+    question: "Lorem ipsum dolor sit amet consectetur. At bibendum ?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. In lacus tempus pretium lacus enim tincidunt posuere. Posuere nec erat risus tincidunt volutpat sit vivamus pharetra senectus. Ipsum dui feugiat mi tellus accumsan varius est. Egestas eget purus sed proin et odio elementum congue.",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet consectetur. At bibendum ?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. In lacus tempus pretium lacus enim tincidunt posuere. Posuere nec erat risus tincidunt volutpat sit vivamus pharetra senectus. Ipsum dui feugiat mi tellus accumsan varius est. Egestas eget purus sed proin et odio elementum congue.",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet consectetur. At bibendum ?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. In lacus tempus pretium lacus enim tincidunt posuere. Posuere nec erat risus tincidunt volutpat sit vivamus pharetra senectus. Ipsum dui feugiat mi tellus accumsan varius est. Egestas eget purus sed proin et odio elementum congue.",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet consectetur. At bibendum ?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. In lacus tempus pretium lacus enim tincidunt posuere. Posuere nec erat risus tincidunt volutpat sit vivamus pharetra senectus. Ipsum dui feugiat mi tellus accumsan varius est. Egestas eget purus sed proin et odio elementum congue.",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet consectetur. At bibendum ?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur. In lacus tempus pretium lacus enim tincidunt posuere. Posuere nec erat risus tincidunt volutpat sit vivamus pharetra senectus. Ipsum dui feugiat mi tellus accumsan varius est. Egestas eget purus sed proin et odio elementum congue.",
+  },
+];
