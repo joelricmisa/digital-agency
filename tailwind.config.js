@@ -13,6 +13,9 @@ export default {
         inter: ["Inter", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
+      backgroundImage:{
+        hero:'url("/src/assets/images/bgHead.png")'
+      },
       width: {},
       screens: {
         xs: "400px",
