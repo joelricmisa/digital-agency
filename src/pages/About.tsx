@@ -1,11 +1,22 @@
 import ActionButton from "../components/ActionButton";
 import { aboutImg1 } from "../assets/images";
 import { aboutImg2 } from "../assets/images";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <section id="about">
-      <div className="mx-auto flex flex-col items-center justify-between gap-20 px-10 py-24 lg:flex-row lg:gap-0 lg:py-32 xl:w-11/12">
+      <motion.div
+        variants={{
+          visible: { x: 0, opacity: 1 },
+          hidden: { x: 100, opacity: 0 },
+        }}
+        transition={{ delay: 0.3 }}
+        initial="hidden"
+        whileInView={"visible"}
+        viewport={{ once: true }}
+        className="mx-auto flex flex-col items-center justify-between gap-20 px-10 py-24 lg:flex-row lg:gap-0 lg:py-36 xl:w-11/12"
+      >
         <div className="relative flex  lg:basis-4/12">
           <img
             src={aboutImg1}
@@ -50,7 +61,7 @@ const About = () => {
             Hire Us
           </ActionButton>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

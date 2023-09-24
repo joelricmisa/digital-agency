@@ -3,6 +3,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FaCircleInfo, FaPaperPlane } from "react-icons/fa6";
 import { contactImg } from "../assets/images";
+import { motion } from "framer-motion";
 
 const FormSchema = z.object({
   name: z.string().min(1, "This field is required, please input your name."),
@@ -38,7 +39,17 @@ const Contact = () => {
 
   return (
     <section id="contact" className="bg-neutral">
-      <div className="mx-auto flex flex-col  px-10  py-24 xl:w-11/12 xl:flex-row">
+      <motion.div
+        variants={{
+          visible: { x: 0, opacity: 1 },
+          hidden: { x: 100, opacity: 0 },
+        }}
+        transition={{ delay: 0.3 }}
+        initial="hidden"
+        whileInView={"visible"}
+        viewport={{ once: true }}
+        className="mx-auto flex flex-col  px-10  py-24 xl:w-11/12 xl:flex-row"
+      >
         <div className="flex w-full basis-full flex-col items-center  gap-8  xl:basis-1/2">
           <p className=" w-full font-bold text-primary before:mb-1 before:mr-2 before:inline-block before:h-0.5 before:w-[140px] before:bg-darkerNeutral/20 md:w-10/12 ">
             Contact Us
@@ -109,7 +120,7 @@ const Contact = () => {
           </form>
         </div>
         <img src={contactImg} alt="contact image" className="hidden xl:block" />
-      </div>
+      </motion.div>
     </section>
   );
 };

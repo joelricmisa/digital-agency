@@ -1,11 +1,21 @@
 import ActionButton from "../components/ActionButton";
-
+import { motion } from "framer-motion";
 const Intro = () => {
   return (
     <section id="intro">
-      <div className="h-screen bg-hero bg-cover bg-no-repeat">
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.1 }}
+        className="h-screen bg-hero bg-cover bg-no-repeat"
+      >
         <div className=" grid h-full place-items-center bg-secondary/70 text-light">
-          <div className=" flex w-full flex-col items-center  justify-center gap-10 px-5 text-center sm:px-10 md:gap-5 lg:w-5/6 lg:gap-10  xl:w-4/6 ">
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className=" flex w-full flex-col items-center  justify-center gap-10 px-5 text-center sm:px-10 md:gap-5 lg:w-5/6 lg:gap-10  xl:w-4/6 "
+          >
             <p>
               Welcome To <span className="text-primary">Canvas Lancer</span>
             </p>
@@ -38,9 +48,9 @@ const Intro = () => {
                 View Portfolio
               </ActionButton>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -8,10 +8,21 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import { footerData } from "../lib/constants";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary ">
+    <motion.footer
+      variants={{
+        visible: { y: 0, opacity: 1 },
+        hidden: { y: 100, opacity: 0 },
+      }}
+      transition={{ delay: 0.3 }}
+      initial="hidden"
+      whileInView={"visible"}
+      viewport={{ once: true }}
+      className="bg-secondary "
+    >
       <div className="lg: mx-auto  grid gap-14 px-10 py-24 font-inter  md:grid-cols-2 lg:grid-cols-5 xl:w-10/12 xl:gap-0 ">
         {footerData.map((col, indexCol) => (
           <ul
@@ -89,7 +100,7 @@ const Footer = () => {
           </a>
         </span>
       </p>
-    </footer>
+    </motion.footer>
   );
 };
 
