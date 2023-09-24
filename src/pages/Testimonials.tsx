@@ -4,7 +4,7 @@ import { testimonialsData } from "../lib/constants";
 const Testimonials = () => {
   const dummyArr = [1, 2, 3, 4, 5];
   return (
-    <section className="bg-secondary">
+    <section id="testimonials" className="bg-secondary">
       <div className="mx-auto flex flex-col gap-10  px-10 py-24 text-light xl:w-11/12">
         <div className="flex flex-wrap justify-between px-5">
           <p className="relative before:mb-1 before:mr-2 before:inline-block before:h-[2px] before:w-[80px] before:bg-darkerNeutral sm:before:w-[250px]">

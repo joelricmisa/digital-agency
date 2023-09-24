@@ -4,8 +4,8 @@ import { aboutImg2 } from "../assets/images";
 
 const About = () => {
   return (
-    <section>
-      <div className="mx-auto my-24 flex flex-col items-center justify-between gap-20 px-10 lg:my-32 lg:flex-row lg:gap-0 xl:w-11/12">
+    <section id="about">
+      <div className="mx-auto flex flex-col items-center justify-between gap-20 px-10 py-24 lg:flex-row lg:gap-0 lg:py-32 xl:w-11/12">
         <div className="relative flex  lg:basis-4/12">
           <img
             src={aboutImg1}
@@ -29,14 +29,14 @@ const About = () => {
               <br /> Digital Agency
             </span>
           </h1>
-          <p className="text-darkerNeutral leading-loose tracking-wide">
+          <p className="leading-loose tracking-wide text-darkerNeutral">
             Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
             enim id gravida pulvinar. Tristique consectetur mi curabitur congue
             enim dignissim amet justo. Porta morbi nulla aliquet adipiscing. Sed
             diam mauris erat faucibus eu posuere ultricies quisque amet. Quam
             pellentesque in tristique
           </p>
-          <p className="text-darkerNeutral leading-loose tracking-wide">
+          <p className="leading-loose tracking-wide text-darkerNeutral">
             sed neque scelerisque quam pulvinar. Risus dictum elementum lacus
             urna. Neque eget sagittis vulputate nam id morbi id. Aliquam
             molestie posuere pulvinar arcu

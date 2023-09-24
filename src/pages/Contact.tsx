@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-neutral">
+    <section id="contact" className="bg-neutral">
       <div className="mx-auto flex flex-col  px-10  py-24 xl:w-11/12 xl:flex-row">
         <div className="flex w-full basis-full flex-col items-center  gap-8  xl:basis-1/2">
           <p className=" w-full font-bold text-primary before:mb-1 before:mr-2 before:inline-block before:h-0.5 before:w-[140px] before:bg-darkerNeutral/20 md:w-10/12 ">

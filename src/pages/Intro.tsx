@@ -2,7 +2,7 @@ import ActionButton from "../components/ActionButton";
 
 const Intro = () => {
   return (
-    <section>
+    <section id="intro">
       <div className="h-screen bg-hero bg-cover bg-no-repeat">
         <div className=" grid h-full place-items-center bg-secondary/70 text-light">
           <div className=" flex w-full flex-col items-center  justify-center gap-10 px-5 text-center sm:px-10 md:gap-5 lg:w-5/6 lg:gap-10  xl:w-4/6 ">

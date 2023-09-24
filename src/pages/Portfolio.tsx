@@ -2,9 +2,9 @@ import { projectsData } from "../lib/constants";
 
 const Portfolio = () => {
   return (
-    <section>
+    <section id="portfolio">
       <div className="mx-auto flex flex-col items-center justify-center gap-10 px-10 py-24  xl:w-11/12">
-        <p className="text-darkerNeutral before:bg-darkerNeutral/30 after:bg-darkerNeutral/30 relative before:mb-1 before:mr-4 before:inline-block before:h-[2px] after:mb-1 after:ml-4 after:inline-block after:h-[2px] xs:before:w-[80px] xs:after:w-[80px]   sm:before:w-[160px] sm:after:w-[160px]">
+        <p className="relative text-darkerNeutral before:mb-1 before:mr-4 before:inline-block before:h-[2px] before:bg-darkerNeutral/30 after:mb-1 after:ml-4 after:inline-block after:h-[2px] after:bg-darkerNeutral/30 xs:before:w-[80px] xs:after:w-[80px]   sm:before:w-[160px] sm:after:w-[160px]">
           Our Portfolio
         </p>
 
