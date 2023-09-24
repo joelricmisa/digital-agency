@@ -1,3 +1,4 @@
+import React from "react";
 import {
   development,
   mobileDev,
@@ -121,4 +122,19 @@ export const faqsData = [
     answer:
       "Lorem ipsum dolor sit amet consectetur. In lacus tempus pretium lacus enim tincidunt posuere. Posuere nec erat risus tincidunt volutpat sit vivamus pharetra senectus. Ipsum dui feugiat mi tellus accumsan varius est. Egestas eget purus sed proin et odio elementum congue.",
   },
+];
+
+export const footerData = [
+  [
+    "Canvas Lancer",
+    "Lorem ipsum dolor sit amet consectetur. Scelerisque vitae et vitae suspendisse vulputate vestibulum tortor nisl cursus. Egestas nulla in ",
+  ],
+  ["Services", "UI/UX", "Website Dev", "Mobile Dev", "SEO"],
+  ["Resources", "Compliance", "Case Studies", "Webinars", "Developers"],
+  [
+    "Contact Information",
+    "canvaslancer@gmail.com",
+    "+00012345678",
+    "Lorem Ipsum Dummy text ",
+  ],
 ];
