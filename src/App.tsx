@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import ServiceCard from "./components/ServiceCard";
 import TestimonialCard from "./components/TestimonialCard";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Faqs from "./pages/Faqs";
 import Intro from "./pages/Intro";
 import Portfolio from "./pages/Portfolio";
@@ -20,6 +21,7 @@ function App() {
         <Portfolio />
         <Testimonials />
         <Faqs />
+        <Contact />
       </main>
     </>
   );

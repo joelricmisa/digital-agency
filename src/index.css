@@ -13,3 +13,11 @@ html {
   background-color: #fff;
   @apply bg-gray-50 font-poppins;
 }
+
+.contactInput {
+  @apply mb-5 w-full rounded-md border border-black/10 px-4 py-3 shadow-sm outline-none focus:ring-1 focus:ring-primary;
+}
+
+.errorMessage {
+  @apply -mt-2 mb-5 flex items-center gap-2 pl-2 text-red-600;
+}
