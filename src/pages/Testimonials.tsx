@@ -22,7 +22,7 @@ const Testimonials = () => {
             Customer Feedback
           </p>
           <ul className="relative hidden  items-center justify-center gap-2 before:mr-1 before:mt-1 before:inline-block before:h-[2px] before:w-[250px] before:bg-darkerNeutral lg:flex">
-            {dummyArr.map((bullet, index) => (
+            {dummyArr.map((index) => (
               <li
                 key={index}
                 className={`${

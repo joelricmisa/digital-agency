@@ -1,4 +1,3 @@
-import React from "react";
 import ActionButton from "../components/ActionButton";
 import { serivcesData } from "../lib/constants";
 import ServiceCard from "../components/ServiceCard";

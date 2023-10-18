@@ -1,4 +1,3 @@
-import React from "react";
 import { fiveStar } from "../assets/images";
 
 type Props = {

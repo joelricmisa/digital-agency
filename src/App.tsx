@@ -1,9 +1,5 @@
-import FaqCard from "./components/FaqCard";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import ServiceCard from "./components/ServiceCard";
-import TestimonialCard from "./components/TestimonialCard";
-import { footerData } from "./lib/constants";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Faqs from "./pages/Faqs";
