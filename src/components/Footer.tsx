@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa6";
 import { footerData } from "../lib/constants";
 import { motion } from "framer-motion";
+import { logo } from "../assets/images";
 
 const Footer = () => {
   return (
@@ -41,7 +42,7 @@ const Footer = () => {
                 } flex items-center gap-4 `}
               >
                 {indexCol === 0 && indexData === 0 ? (
-                  <img src={"src/assets/logo.png"} className="h-9 w-9" />
+                  <img src={logo} className="h-9 w-9" />
                 ) : (
                   ""
                 )}

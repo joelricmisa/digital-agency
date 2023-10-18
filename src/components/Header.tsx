@@ -3,6 +3,7 @@ import { navLinks } from "../lib/constants";
 import { FaBars } from "react-icons/fa6";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { logo } from "../assets/images";
 const Header = () => {
   const [toggle, setToggle] = useState(false);
 
@@ -24,7 +25,7 @@ const Header = () => {
       >
         {/* Brand Name  */}
         <h1 className="flex basis-auto items-center gap-2 !font-inter  text-2xl font-semibold lg:basis-4/12 ">
-          <img src="src/assets/logo.png" alt="brand logo" />
+          <img src={logo} alt="brand logo" />
           <span>Canvas Lancer</span>
         </h1>
 
