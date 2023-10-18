@@ -41,7 +41,7 @@ const Footer = () => {
                 } flex items-center gap-4 `}
               >
                 {indexCol === 0 && indexData === 0 ? (
-                  <img src={"/src/assets/logo.png"} className="h-9 w-9" />
+                  <img src={"src/assets/logo.png"} className="h-9 w-9" />
                 ) : (
                   ""
                 )}

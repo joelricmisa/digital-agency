@@ -24,7 +24,7 @@ const Header = () => {
       >
         {/* Brand Name  */}
         <h1 className="flex basis-auto items-center gap-2 !font-inter  text-2xl font-semibold lg:basis-4/12 ">
-          <img src="/src/assets/logo.png" alt="brand logo" />
+          <img src="src/assets/logo.png" alt="brand logo" />
           <span>Canvas Lancer</span>
         </h1>
 
